@@ -13,8 +13,8 @@ function rot13(encodedStr) {
   var words = encodedStr.split(" "); // String to Array
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
-  for (let i = 0; i < words.length; i++) {
-    const word = words[i];
+  for (let i = 0; i < words.length; i++) { // itrat all the word & going decoded
+    const word = words[i];// for giving word string
     let decoded_word = "";
     for (let j = 0; j < word.length; j++) {
       var char = word.charAt(j);
@@ -23,7 +23,7 @@ function rot13(encodedStr) {
     }
     decodedArr.push(decoded_word);
   }
-  return decodedArr.join(" ");
+  return decodedArr.join(" ");// join my all decoded word in my single data
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
